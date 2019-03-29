@@ -21,12 +21,10 @@ class CourseCategory(models.Model):
 class Teacher(models.Model):
     """讲师、导师表"""
     name = models.CharField(max_length=32)
-    role_choices = ((0, '讲师'), (1, '导师'))
-    role = models.SmallIntegerField(choices=role_choices, default=0)
     title = models.CharField(max_length=64, verbose_name="职位、职称")
     signature = models.CharField(max_length=255, help_text="导师签名", blank=True, null=True)
     image = models.CharField(max_length=128)
-    brief = models.TextField(max_length=1024)
+    describe = models.TextField(max_length=1024)
 
     def __str__(self):
         return self.name
@@ -40,19 +38,17 @@ class Course(models.Model):
     name = models.CharField(max_length=128, unique=True)  # Python基础
     course_img = models.CharField(max_length=255)  # 原网站好像用的雪碧图，完整图片作为课程图片，人像部分作为作者图片
     sub_category = models.ForeignKey("CourseCategory", on_delete=models.DO_NOTHING)  #
-    course_type_choices = ((0, '专栏'), (1, '视频课'), (2, '微课'))
-    course_type = models.SmallIntegerField(choices=course_type_choices)
-    brief = models.TextField(verbose_name="课程（模块）概述", max_length=2048)
+    # brief = models.TextField(verbose_name="课程（模块）概述", max_length=2048)
     status_choices = ((0, '更新中'), (1, '更新完成'))
     status = models.SmallIntegerField(choices=status_choices, default=0)
     template_id = models.SmallIntegerField("前端模板id", default=1, help_text="前端模板应该是分为文字和视频两种展示类型")
+    teacher = models.ForeignKey("Teacher", verbose_name="课程讲师", on_delete=models.DO_NOTHING)
+    hours = models.IntegerField("课时")
 
     # coupon = GenericRelation("Coupon")
-    # 查询常见问题
-    asked_question = GenericRelation("OftenAskedQuestion")
 
     def __str__(self):
-        return "%s(%s)" % (self.name, self.get_course_type_display())
+        return "%s" % self.name
 
     class Meta:
         verbose_name_plural = "06.专题课或学位课模块"
@@ -61,8 +57,6 @@ class Course(models.Model):
 class CourseDetail(models.Model):
     """课程详情页内容"""
     course = models.OneToOneField("Course", on_delete=models.CASCADE)
-
-    hours = models.IntegerField("课时")
     course_slogan = models.CharField(max_length=125, blank=True, null=True)
     video_brief_link = models.CharField(verbose_name='课程介绍', max_length=255, blank=True, null=True)
     why_study = models.TextField(verbose_name="为什么学习这门课程")
@@ -70,7 +64,8 @@ class CourseDetail(models.Model):
     career_improvement = models.TextField(verbose_name="此项目如何有助于我的职业生涯")
     prerequisite = models.TextField(verbose_name="课程先修要求", max_length=1024)
     recommend_courses = models.ManyToManyField("Course", related_name="recommend_by", blank=True)
-    teachers = models.ManyToManyField("Teacher", verbose_name="课程讲师")
+
+    asked_question = GenericRelation("OftenAskedQuestion")
 
     def __str__(self):
         return "%s" % self.course
@@ -96,24 +91,6 @@ class OftenAskedQuestion(models.Model):
         verbose_name_plural = "08. 常见问题"
 
 
-class CourseOutline(models.Model):
-    """课程大纲"""
-    course_detail = models.ForeignKey("CourseDetail", on_delete=models.DO_NOTHING)
-
-    # 前端显示顺序
-    order = models.PositiveSmallIntegerField(default=1)
-
-    title = models.CharField(max_length=128)
-    content = models.TextField("内容", max_length=2048)
-
-    def __str__(self):
-        return "%s" % self.title
-
-    class Meta:
-        unique_together = ('course_detail', 'title')
-        verbose_name_plural = "09. 课程大纲"
-
-
 class CourseChapter(models.Model):
     """课程章节"""
     course = models.ForeignKey("Course", related_name='coursechapters', on_delete=models.CASCADE)
@@ -135,13 +112,11 @@ class CourseSection(models.Model):
     chapter = models.ForeignKey("CourseChapter", related_name='coursesections', on_delete=models.CASCADE)
     name = models.CharField(max_length=128)
     order = models.PositiveSmallIntegerField(verbose_name="课时排序", help_text="建议每个课时之间空1至2个值，以备后续插入课时")
-    section_type_choices = ((0, '文档'), (1, '练习'), (2, '视频'))
+    section_type_choices = ((0, '文档'), (1, '音频'), (2, '视频'))
     section_type = models.SmallIntegerField(default=2, choices=section_type_choices)
     # 59EE3275E977AADB9C33DC5901307461
     section_link = models.CharField(max_length=255, blank=True, null=True, help_text="若是video，填vid,若是文档，填link")
-
-    video_time = models.CharField(verbose_name="视频时长", blank=True, null=True, max_length=32)  # 仅在前端展示使用
-    pub_date = models.DateTimeField(verbose_name="发布时间", auto_now_add=True)
+    # pub_date = models.DateTimeField(verbose_name="发布时间", auto_now_add=True)
     free_trail = models.BooleanField("是否可试看", default=False)
 
     class Meta:
@@ -154,14 +129,14 @@ class CourseSection(models.Model):
 
 class CourseReview(models.Model):
     """课程评价"""
-    enrolled_course = models.OneToOneField("EnrolledCourse")
+    enrolled_course = models.OneToOneField("EnrolledCourse", on_delete=models.CASCADE)
     about_teacher = models.FloatField(default=0, verbose_name="讲师讲解是否清晰")
     about_video = models.FloatField(default=0, verbose_name="内容实用")
     about_course = models.FloatField(default=0, verbose_name="课程内容通俗易懂")
     review = models.TextField(max_length=1024, verbose_name="评价")
     disagree_number = models.IntegerField(default=0, verbose_name="踩")
     agree_number = models.IntegerField(default=0, verbose_name="赞同数")
-    tags = models.ManyToManyField("Tags", blank=True, verbose_name="标签")
+    # tags = models.ManyToManyField("Tags", blank=True, verbose_name="标签")
     date = models.DateTimeField(auto_now_add=True, verbose_name="评价日期")
     is_recommend = models.BooleanField("热评推荐", default=False)
     hide = models.BooleanField("不在前端页面显示此条评价", default=False)
@@ -243,7 +218,7 @@ class Comment(models.Model):
 
 class Account(models.Model):
     username = models.CharField("用户名", max_length=64, unique=True, help_text="用户名只能是手机号")
-    nickname = models.CharField("昵称", max_length=12, null=True, blank=True, verbose_name="昵称")
+    nickname = models.CharField("昵称", max_length=12, null=True, blank=True)
     password = models.CharField("密码", max_length=64)
     uid = models.CharField(max_length=64, unique=True, help_text='微信用户绑定和CC视频统计')  # 与第3方交互用户信息时，用这个uid,以避免泄露敏感用户信息
     openid = models.CharField(max_length=128, blank=True, null=True)
@@ -269,7 +244,7 @@ class UserAuthToken(models.Model):
     """
     用户Token表
     """
-    user = models.OneToOneField(to="Account")
+    user = models.OneToOneField(to="Account", on_delete=models.CASCADE)
     token = models.CharField(max_length=64, unique=True)
 
 
@@ -299,7 +274,7 @@ class Coupon(models.Model):
     off_percent = models.PositiveSmallIntegerField("折扣百分比", help_text="只针对折扣券，例7.9折，写79", blank=True, null=True)
     minimum_consume = models.PositiveIntegerField("最低消费", default=0, help_text="仅在满减券时填写此字段", null=True, blank=True)
 
-    content_type = models.ForeignKey(ContentType, blank=True, null=True)
+    content_type = models.ForeignKey(ContentType, blank=True, null=True, on_delete=models.DO_NOTHING)
     object_id = models.PositiveIntegerField("绑定课程", blank=True, null=True, help_text="可以把优惠券跟课程绑定")
     content_object = GenericForeignKey('content_type', 'object_id')
 
@@ -353,7 +328,7 @@ class CouponRecord(models.Model):
 class EnrolledCourse(models.Model):
     """已订阅课程"""
     account = models.ForeignKey("Account", on_delete=models.CASCADE)
-    course = models.ForeignKey("Course", limit_choices_to=~Q(course_type=2))
+    course = models.ForeignKey("Course", limit_choices_to=~Q(course_type=2), on_delete=models.DO_NOTHING)
     enrolled_date = models.DateTimeField(auto_now_add=True)
     valid_begin_date = models.DateField(verbose_name="有效期开始自")
     valid_end_date = models.DateField(verbose_name="有效期结束至")

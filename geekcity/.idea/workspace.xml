@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="46f1b908-2c49-49fa-8301-20419501e4ca" name="Default Changelist" comment="" />
+    <list default="true" id="46f1b908-2c49-49fa-8301-20419501e4ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/serializers/courseserializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/serializers/noteserializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/utils/baseresponse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views/course.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/course.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views/order.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views/shopping/shoppings.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views/shopping/shoppings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +33,23 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
@@ -55,47 +85,93 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1941720140">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="api_course" value="2" />
+          <entry key="api_coursecategory" value="3" />
+          <entry key="api_coursedetail" value="1" />
+          <entry key="api_teacher" value="1" />
+          <entry key="py" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Database Element" value="7" />
+          <entry key="Python" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cell" value="14" />
+          <entry key="py" value="1592" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="1592" />
+          <entry key="Scratch" value="14" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geekcity/settings.py">
+        <entry file="file://$PROJECT_DIR$/api/views/course.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2201">
-              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/apps.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/geekcity/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="437">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
               <folding>
-                <element signature="e#632#664#0" expanded="true" />
+                <element signature="e#165#209#0" expanded="true" />
+                <element signature="e#480#745#0" />
+                <element signature="e#586#951#0" />
+                <element signature="e#1207#1593#0" />
+                <marker date="1553840695254" expanded="true" signature="476:774" ph="..." />
+                <marker date="1553840695254" expanded="false" signature="803:804" ph="..." />
+                <marker date="1553840695254" expanded="true" signature="803:824" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/views/course.py">
+        <entry file="file://$PROJECT_DIR$/api/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="304">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="33" selection-start-column="33" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/serializers/courseserializer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
-                <element signature="e#165#209#0" expanded="true" />
-                <element signature="e#295#332#0" />
-                <marker date="1553777358610" expanded="true" signature="286:347" ph="..." />
-                <marker date="1553777358610" expanded="true" signature="376:377" ph="..." />
-                <marker date="1553777358610" expanded="true" signature="376:397" ph="..." />
-                <marker date="1553777358610" expanded="true" signature="483:520" ph="..." />
+                <element signature="e#175#213#0" expanded="true" />
+                <marker date="1553844365771" expanded="true" signature="345:383" ph="..." />
+                <marker date="1553844365771" expanded="true" signature="605:607" ph="..." />
+                <marker date="1553844365771" expanded="true" signature="1463:1464" ph="..." />
+                <marker date="1553844365771" expanded="true" signature="1463:1468" ph="..." />
+                <marker date="1553844365771" expanded="true" signature="1739:1749" ph="..." />
               </folding>
             </state>
           </provider>
@@ -104,28 +180,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/views/account.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-611">
-              <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            <state relative-caret-position="-76">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
               <folding>
                 <element signature="e#166#210#0" expanded="true" />
-                <marker date="1553779242528" expanded="true" signature="391:410" ph="..." />
-                <marker date="1553779242528" expanded="true" signature="538:539" ph="..." />
-                <marker date="1553779242528" expanded="true" signature="566:571" ph="..." />
-                <marker date="1553779242528" expanded="true" signature="566:597" ph="..." />
-                <marker date="1553779242528" expanded="true" signature="738:743" ph="..." />
-                <marker date="1553779242528" expanded="true" signature="1089:1191" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/views/shopping/shoppings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-              <folding>
-                <element signature="e#237#248#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,31 +192,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/views/note.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            <state relative-caret-position="614">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#163#207#0" expanded="true" />
-                <marker date="1553778847096" expanded="true" signature="284:289" ph="..." />
-                <marker date="1553778847096" expanded="true" signature="496:501" ph="..." />
+                <marker date="1553841449658" expanded="true" signature="284:289" ph="..." />
+                <marker date="1553841449658" expanded="true" signature="496:501" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../djangoenv/Lib/site-packages/rest_framework/viewsets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="200" column="30" selection-start-line="200" selection-start-column="30" selection-end-line="200" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../djangoenv/Lib/site-packages/rest_framework/generics.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -166,17 +206,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="2261">
+              <caret line="119" column="14" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="14" />
               <folding>
                 <element signature="e#0#81#0" expanded="true" />
-                <element signature="e#1996#2516#0" />
-                <element signature="e#1158#2307#0" />
-                <element signature="e#4553#5389#0" />
-                <element signature="e#5436#5947#0" />
-                <element signature="e#5989#6391#0" />
-                <element signature="e#6433#6976#0" />
-                <element signature="e#7018#7980#0" />
               </folding>
             </state>
           </provider>
@@ -201,20 +234,30 @@
       <replace />
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/models.py" />
-        <option value="$PROJECT_DIR$/api/models.py" />
         <option value="$PROJECT_DIR$/api/views/user/account.py" />
         <option value="$PROJECT_DIR$/api/serializers/coursehost.py" />
         <option value="$PROJECT_DIR$/geekcity/urls.py" />
         <option value="$PROJECT_DIR$/api/views/course/__init__.py" />
-        <option value="$PROJECT_DIR$/api/urls.py" />
-        <option value="$PROJECT_DIR$/api/views/course.py" />
-        <option value="$PROJECT_DIR$/api/views/note.py" />
         <option value="$PROJECT_DIR$/geekcity/settings.py" />
         <option value="$PROJECT_DIR$/api/views/account.py" />
+        <option value="$PROJECT_DIR$/api/views/shopping/shoppings.py" />
+        <option value="$PROJECT_DIR$/api/views/order.py" />
+        <option value="$PROJECT_DIR$/api/serializers/course.py" />
+        <option value="$PROJECT_DIR$/api/utils/baseresponse.py" />
+        <option value="$PROJECT_DIR$/api/apps.py" />
+        <option value="$PROJECT_DIR$/api/urls.py" />
+        <option value="$PROJECT_DIR$/api/views/course.py" />
+        <option value="$PROJECT_DIR$/api/serializers/noteserializer.py" />
+        <option value="$PROJECT_DIR$/api/views/note.py" />
+        <option value="$PROJECT_DIR$/api/models.py" />
+        <option value="$PROJECT_DIR$/api/serializers/courseserializer.py" />
       </list>
     </option>
   </component>
@@ -224,17 +267,21 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="289" />
-    <option name="y" value="10" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
     <option name="width" value="1473" />
     <option name="height" value="1380" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,31 +297,18 @@
             <path>
               <item name="geekcity" type="b2602c69:ProjectViewProjectNode" />
               <item name="geekcity" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geekcity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geekcity" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="shopping" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="geekcity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="geekcity" type="462c0819:PsiDirectoryNode" />
               <item name="geekcity" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/api/views.py" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -305,6 +339,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="geekcity.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -340,27 +375,28 @@
     <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24982105" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19255547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32991013" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" weight="0.32904884" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32904884" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32904884" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" visible="true" weight="0.14674301" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.11825193" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.182534" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,139 +406,177 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models.py">
+    <entry file="file://$PROJECT_DIR$/models.py" />
+    <entry file="file://$PROJECT_DIR$/api/views/user/account.py" />
+    <entry file="file://$PROJECT_DIR$/api/views/course/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/../djangoenv/Lib/site-packages/rest_framework/generics.py" />
+    <entry file="file://$PROJECT_DIR$/../djangoenv/Lib/site-packages/rest_framework/viewsets.py" />
+    <entry file="file://$PROJECT_DIR$/geekcity/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="127" lean-forward="true" selection-end-line="506" />
+        <state relative-caret-position="2261">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/views/user/account.py">
+    <entry file="file://$PROJECT_DIR$/api/views/shopping/shoppings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#225#236#0" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="359" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/views/order.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/serializers/course.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/serializers/coursehost.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/views/course/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/urls.py">
+    <entry file="file://$PROJECT_DIR$/geekcity/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/utils/baseresponse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="28" selection-start-line="9" selection-end-line="19" />
           <folding>
-            <element signature="e#163#209#0" expanded="true" />
+            <marker date="1553838536467" expanded="true" signature="191:192" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="das://3f55a48a-02fa-48ab-b478-ced40349c589/schema/main/table/api_coursecategory">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16646cbe-a37f-497f-b2af-58a09851664d/schema/main/table/api_coursecategory">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16646cbe-a37f-497f-b2af-58a09851664d/schema/main/table/api_course">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://16646cbe-a37f-497f-b2af-58a09851664d/schema/main/table/api_coursedetail">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/serializers/noteserializer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/migrations/0002_auto_20190329_1444.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/geekcity/urls.py">
+    <entry file="das://16646cbe-a37f-497f-b2af-58a09851664d/schema/main/table/api_teacher">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/views/course.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="437">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
-            <element signature="e#632#664#0" expanded="true" />
+            <element signature="e#165#209#0" expanded="true" />
+            <element signature="e#480#745#0" />
+            <element signature="e#586#951#0" />
+            <element signature="e#1207#1593#0" />
+            <marker date="1553840695254" expanded="true" signature="476:774" ph="..." />
+            <marker date="1553840695254" expanded="false" signature="803:804" ph="..." />
+            <marker date="1553840695254" expanded="true" signature="803:824" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="2261">
+          <caret line="119" column="14" selection-start-line="119" selection-start-column="4" selection-end-line="119" selection-end-column="14" />
           <folding>
             <element signature="e#0#81#0" expanded="true" />
-            <element signature="e#1996#2516#0" />
-            <element signature="e#1158#2307#0" />
-            <element signature="e#4553#5389#0" />
-            <element signature="e#5436#5947#0" />
-            <element signature="e#5989#6391#0" />
-            <element signature="e#6433#6976#0" />
-            <element signature="e#7018#7980#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../djangoenv/Lib/site-packages/rest_framework/generics.py">
+    <entry file="file://$PROJECT_DIR$/api/views/account.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../djangoenv/Lib/site-packages/rest_framework/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="200" column="30" selection-start-line="200" selection-start-column="30" selection-end-line="200" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/views/course.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="-76">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding>
-            <element signature="e#165#209#0" expanded="true" />
-            <element signature="e#295#332#0" />
-            <marker date="1553777358610" expanded="true" signature="286:347" ph="..." />
-            <marker date="1553777358610" expanded="true" signature="376:377" ph="..." />
-            <marker date="1553777358610" expanded="true" signature="376:397" ph="..." />
-            <marker date="1553777358610" expanded="true" signature="483:520" ph="..." />
+            <element signature="e#166#210#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/views/note.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state relative-caret-position="614">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#163#207#0" expanded="true" />
-            <marker date="1553778847096" expanded="true" signature="284:289" ph="..." />
-            <marker date="1553778847096" expanded="true" signature="496:501" ph="..." />
+            <marker date="1553841449658" expanded="true" signature="284:289" ph="..." />
+            <marker date="1553841449658" expanded="true" signature="496:501" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/geekcity/settings.py">
+    <entry file="file://$PROJECT_DIR$/api/serializers/courseserializer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2201">
-          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/views/account.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-611">
-          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="16">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
-            <element signature="e#166#210#0" expanded="true" />
-            <marker date="1553779242528" expanded="true" signature="391:410" ph="..." />
-            <marker date="1553779242528" expanded="true" signature="538:539" ph="..." />
-            <marker date="1553779242528" expanded="true" signature="566:571" ph="..." />
-            <marker date="1553779242528" expanded="true" signature="566:597" ph="..." />
-            <marker date="1553779242528" expanded="true" signature="738:743" ph="..." />
-            <marker date="1553779242528" expanded="true" signature="1089:1191" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/views/shopping/shoppings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-          <folding>
-            <element signature="e#237#248#0" expanded="true" />
+            <element signature="e#175#213#0" expanded="true" />
+            <marker date="1553844365771" expanded="true" signature="345:383" ph="..." />
+            <marker date="1553844365771" expanded="true" signature="605:607" ph="..." />
+            <marker date="1553844365771" expanded="true" signature="1463:1464" ph="..." />
+            <marker date="1553844365771" expanded="true" signature="1463:1468" ph="..." />
+            <marker date="1553844365771" expanded="true" signature="1739:1749" ph="..." />
           </folding>
         </state>
       </provider>
